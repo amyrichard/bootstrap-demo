@@ -27,9 +27,10 @@ body {
     color: $secondary-color;
   }
   a:hover {
-    //calling on the mixin for hovers
+    //  3. calling on the mixin for hovers
     @include hoverChange(#ffff00);
   }
+  margin-bottom: 3px;
 }
 
 h1 {

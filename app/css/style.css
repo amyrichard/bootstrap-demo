@@ -7192,7 +7192,8 @@ body {
   font-family: Times, serif; }
 
 .nav {
-  background: #660000; }
+  background: #660000;
+  margin-bottom: 3px; }
   .nav a {
     color: #ffffe6; }
   .nav a:hover {

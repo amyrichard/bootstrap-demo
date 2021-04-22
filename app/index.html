@@ -8,7 +8,7 @@
 </head>
 <header>
   <h1>Bootstrap Demonstration Project</h1>
-
+<nav>
   <ul class="nav nav-pills">
   <li class="nav-item">
     <a class="nav-link active" href="#!">Home</a>
@@ -17,9 +17,33 @@
     <a class="nav-link" href="#!">Menu</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link disabled" href="#!">Contact</a>
+    <a class="nav-link" href="#!">Contact</a>
   </li>
 </ul>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <a class="navbar-brand" href="#">New nav bar with inline text and 'primary' color</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+    </ul>
+    <span class="navbar-text">
+      Check Out The Oaks and Birds!
+    </span>
+  </div>
+</nav>
 
 </header>
 
@@ -56,6 +80,7 @@
       </a>
     </div>
   </div>
+  <!-- second carousel with fade -->
   <div class="col-4">
     <div id="carouselFadeExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
