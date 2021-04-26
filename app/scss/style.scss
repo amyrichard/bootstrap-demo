@@ -2,13 +2,19 @@
 
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
-//1. Variables below
+@use "sass:color";
+// 3. Using interpolation for comments
+/**
+bootstrap-demo-solo Color Palette:
+Primary: #{$primary-color};
+Secondary: #{$secondary-color};
+**/
 $primary-color: #660000;
 $secondary-color: #ffffe6;
 $font-body: Times, serif;
 $font-headings: Arial, sans-serif;
 
-// 3. Adding a mixin to deal with hovers, changing color and font size
+
 @mixin hoverChange ($color){
   font-size: 110%;
   color: $color;
@@ -20,14 +26,12 @@ body {
   font-family: $font-body;
 }
 
-//2. Nesting
 .nav {
     background: $primary-color;
   a{
     color: $secondary-color;
   }
   a:hover {
-    //  3. calling on the mixin for hovers
     @include hoverChange(#ffff00);
   }
   margin-bottom: 3px;
@@ -38,12 +42,25 @@ h1 {
   font-family: $font-headings;
 }
 
+.buttons-custom{
+  background: black;
+  color: white;
+  border-radius: 35px;
+  border: 2px solid orange;
+}
+//  1. Extends buttons-custom styling
+.btn-lrg {
+  @extend .buttons-custom
+}
 
 footer {
   background-color: $primary-color;
   color: white;
   padding: 4px;
   text-align: center;
-  margin-top: 5px;
+}
+// 2. Using operators
+  margin-top: 2rem * 1.5;
+  margin-bottom: 2rem * 2;
 
 }
