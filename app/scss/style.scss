@@ -2,18 +2,18 @@
 
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
-@use "sass:color";
+
+$primary-color: #660000;
+$secondary-color: #ffffe6;
+$font-body: Times, serif;
+$font-headings: Arial, sans-serif;
+
 // 3. Using interpolation for comments
 /**
 bootstrap-demo-solo Color Palette:
 Primary: #{$primary-color};
 Secondary: #{$secondary-color};
 **/
-$primary-color: #660000;
-$secondary-color: #ffffe6;
-$font-body: Times, serif;
-$font-headings: Arial, sans-serif;
-
 
 @mixin hoverChange ($color){
   font-size: 110%;
@@ -60,7 +60,8 @@ footer {
   text-align: center;
 }
 // 2. Using operators
-  margin-top: 2rem * 1.5;
-  margin-bottom: 2rem * 2;
+footer{
+  margin-top: 2rem * 2;
+  margin-bottom: 2rem * 1.5;
 
 }
